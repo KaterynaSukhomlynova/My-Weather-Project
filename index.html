@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/ce355302e4.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+
+  <body>
+    <form class="search-form" id="search-form">
+      <div class="container-fluid">
+        <input
+          class="form-control form-control-lg"
+          type="search"
+          placeholder="Enter city name"
+          aria-label=".form-control-sm example"
+          id="search-input"
+        />
+        <input
+          class="btn btn-primary btn-lg text-wrap"
+          type="submit"
+          data-bs-toggle="button"
+          value="Search"
+        />
+      </div>
+    </form>
+    <br />
+
+    <div class="d-grid gap-2 col-6 mx-auto">
+      <button
+        id="current-location"
+        class="btn btn-primary btn-lg text-wrap"
+        type="button"
+        data-bs-toggle="button"
+      >
+        Weather in current location
+      </button>
+    </div>
+
+    <h1 class="city"><strong id="city">LIMA</strong></h1>
+    <h2>
+      <span id="date"></span>
+      <br />
+      <span class="degrees" id="degrees">17</span>
+      <span class="units">
+        <a href="#" id="celcius">°C</a>
+        <a href="#" id="fahrenheit">°F</a>
+      </span>
+      <br />
+      <em id="description">Cloudy</em>
+    </h2>
+
+    <div class="card forecast-card">
+      <div class="card-body forecast-body">
+        <h5 class="card-title forecast-title">
+          <i class="fa-solid fa-temperature-three-quarters"></i> Daily forecast
+        </h5>
+        <div class="DayliForecastCard">
+          <ul class="DaillyForecastCard-text">
+            <li class="col">Today<br />17°</li>
+            <li class="col">Sun<br />18°</li>
+            <li class="col">Mon<br />18°</li>
+            <li class="col">Tue<br />17°</li>
+            <li class="col">Wed<br />17°</li>
+            <li class="col">Thu<br />17°</li>
+            <li class="col">Fri<br />19°</li>
+            <li class="col">Sat<br />19°</li>
+          </ul>
+        </div>
+        <a
+          href="https://weather.com/weather/monthly/l/4c3d66b0fe4de8cdf345929531e7f189818eb49d39eeee5dfe77efb594eb51fc"
+          class="card-link"
+          >Monthly forecast</a
+        >
+      </div>
+    </div>
+
+    <div class="row">
+      <span class="col-sm-6">
+        <div class="card text-center">
+          <div class="card-body">
+            <h5 class="card-title"><i class="fa-solid fa-sun"></i> UV Index</h5>
+            <p class="card-text">5 of 10</p>
+          </div>
+        </div>
+      </span>
+      <span class="col-sm-6">
+        <div class="card text-center">
+          <div class="card-body">
+            <h5 class="card-title">
+              <i class="fa-solid fa-droplet"></i> Humidity
+            </h5>
+            <p class="card-text"><span id="humidity">87</span> %</p>
+          </div>
+        </div>
+      </span>
+    </div>
+    <div class="row">
+      <span class="col-sm-6">
+        <div class="card text-center">
+          <div class="card-body">
+            <h5 class="card-title"><i class="fa-solid fa-wind"></i> Wind</h5>
+            <p class="card-text"><span id="wind">6</span> m/s</p>
+          </div>
+        </div>
+      </span>
+      <span class="col-sm-6">
+        <div class="card text-center">
+          <div class="card-body">
+            <h5 class="card-title">
+              <i class="fa-solid fa-umbrella"></i> Precipitation
+            </h5>
+            <p class="card-text"><span id="precipitation">10</span> %</p>
+          </div>
+        </div>
+      </span>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+  <footer>Built by Kateryna Sukhomlynova</footer>
+</html>

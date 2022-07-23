@@ -1,0 +1,100 @@
+html {
+  margin: 2px;
+  background-color: #206083;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  background-color: transparent;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  position: center;
+  margin: 17px 0px;
+  padding: 0px 20px;
+  text-align: center;
+}
+
+h1 {
+  margin-top: 45px;
+  text-align: center;
+  font-size: 42px;
+}
+
+button {
+  opacity: 65%;
+}
+
+input,
+button,
+.card {
+  border-radius: 3em;
+  align-items: center;
+  box-shadow: 5px 5px 5px #acc0cb;
+}
+
+h2,
+h3 {
+  text-align: center;
+  font-size: 30px;
+}
+
+li,
+p {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+footer {
+  margin-top: 40px;
+  font-size: 12px;
+  font-weight: lighter;
+  font-style: italic;
+}
+
+.container-fluid {
+  display: inline-flex;
+  flex-direction: row;
+  position: center;
+  justify-content: center;
+  padding-top: 17px;
+  padding-right: 10%;
+  padding-left: 10%;
+  gap: 10px;
+  opacity: 65%;
+}
+
+.forecast-card {
+  position: center;
+  opacity: 65%;
+  border: none;
+  flex-direction: row;
+  margin: 20px 10%;
+}
+
+.forecast-card.card-body {
+  margin: 10px;
+}
+
+.forecast-title,
+.card-link {
+  padding-left: 20px;
+}
+
+.row {
+  flex-wrap: nowrap;
+  position: center;
+  justify-content: center;
+  padding: 15px 15px;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.col-sm-6 {
+  align-items: center;
+  margin-top: 20px;
+  opacity: 65%;
+}
