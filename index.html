@@ -11,12 +11,12 @@
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="styles.css" />
     <script
       src="https://kit.fontawesome.com/ce355302e4.js"
       crossorigin="anonymous"
     ></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
@@ -50,18 +50,26 @@
       </button>
     </div>
 
-    <h1 class="city"><strong id="city">LIMA</strong></h1>
-    <h2>
-      <span id="date"></span>
-      <br />
-      <span class="degrees" id="degrees">17</span>
-      <span class="units">
-        <a href="#" id="celcius">°C</a>
-        <a href="#" id="fahrenheit">°F</a>
-      </span>
-      <br />
-      <em id="description">Cloudy</em>
-    </h2>
+    <div class="container-weather text-center">
+      <h1 class="city"><strong id="city">LIMA</strong></h1>
+      <p><span class="current-time" id="date"></span></p>
+      <div class="weather-icon">
+        <img
+          src="https://openweathermap.org/img/wn/10d@2x.png"
+          id="weather-icon"
+          class="float-right"
+        />
+      </div>
+      <h2>
+        <em id="description">Cloudy</em>
+        <br />
+        <span class="degrees" id="degrees">17</span>
+        <span class="units">
+          <a href="#" id="celcius" class="active">°C</a>
+          <a href="#" id="fahrenheit">°F</a>
+        </span>
+      </h2>
+    </div>
 
     <div class="card forecast-card">
       <div class="card-body forecast-body">
