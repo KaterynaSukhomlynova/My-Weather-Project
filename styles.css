@@ -8,15 +8,6 @@ body {
   background-color: transparent;
 }
 
-ul {
-  list-style: none;
-  display: flex;
-  position: center;
-  margin: 17px 0px;
-  padding: 0px 20px;
-  text-align: center;
-}
-
 h1 {
   font-size: 45px;
   margin-top: 45px;
@@ -39,10 +30,11 @@ h2 {
   font-weight: 600;
 }
 
-li,
-p {
+p,
+.daily-forecast-card {
   font-weight: 400;
   font-size: 18px;
+  color: rgb(33, 37, 41);
 }
 
 footer {
@@ -88,14 +80,16 @@ footer {
 .units .active {
   color: black;
   cursor: default;
-}
-
-.units .active {
   text-decoration: none;
 }
 
 .weather-icon {
   margin: 0 auto;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
 }
 
 .forecast-card {
@@ -108,11 +102,6 @@ footer {
 
 .forecast-card.card-body {
   margin: 10px;
-}
-
-.forecast-title,
-.card-link {
-  padding-left: 20px;
 }
 
 .row {
@@ -128,4 +117,20 @@ footer {
   align-items: center;
   margin-top: 20px;
   opacity: 65%;
+}
+
+.forecast-row {
+  margin: 0 auto;
+  justify-content: space-evenly;
+  text-align: center;
+  word-wrap: normal;
+}
+
+.forecast-title,
+.card-link {
+  padding-left: 20px;
+}
+
+.forecast-temperature-max {
+  font-weight: bolder;
 }
